@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  background-color: var(--box);
+  color: var(--background-text);
+  padding: 1em;
+  text-align: center;
+  height: 150px;
+}
+
+.lista {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.lista li {
+  margin: 0 1.3em;
+  cursor: pointer;
+}
+
+.lista li:hover {
+  color: var(--primary);
+}
+
+.lista svg {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.copy_right {
+  margin-top: 1em;
+}
+
+.copy_right span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary);
+}

@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--box);
+  padding-block: 0.5em;
+  padding-inline: 1em;
+}
+
+.titulo {
+  font-weight: 600;
+  font-size: 35px ;
+  color: var(--primary);
+  text-decoration: none !important;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar img {
+  height: 60px;
+}
+
+.inputBusca {
+  width: 400px !important;
+}
+
+.lista {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.lista li {
+  margin-right: 1em;
+}
+
+.lista li a {
+  color: var(--names);
+  text-decoration: none;
+}
+
+.lista li a:hover {
+  color: var(--primary);
+}
+
+.lista li i, .lista li img {
+  margin-right: 10px;
+}
+
+.lista li i {
+  font-size: 1.5em;
+}
