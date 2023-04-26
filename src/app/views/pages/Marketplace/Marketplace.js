@@ -1,6 +1,8 @@
+import styles from '../../shared/styles/Marketplace.module.css'
+
 function Marketplace() {
   return (
-    <div>
+    <div className={styles.marketplace_container}>
       Loja
     </div>
   );

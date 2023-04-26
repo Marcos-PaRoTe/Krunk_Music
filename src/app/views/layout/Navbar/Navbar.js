@@ -58,7 +58,7 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link">
                 <img src={profile} alt="Foto do usuário"/>
-                Kleitinho
+                <span style={{fontSize: '20px'}}>Kleitinho</span>
               </Link>
             </li>
           </ul>
