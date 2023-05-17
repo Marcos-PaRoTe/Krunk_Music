@@ -5,18 +5,20 @@ import LeftPanel from "./views/shared/components/LeftPanel/LeftPanel";
 import Marketplace from "./views/pages/Marketplace/Marketplace";
 import RightPanel from "./views/shared/components/RightPanel/RightPanel";
 import Footer from "../app/views/layout/Footer/Footer";
+import Login from "./views/pages/Login/Login";
 
 function App() {
   return (
     <Router>
       <Navbar />
 
-      <section style={{display: 'flex'}}>
+      <section style={{ display: "flex" }}>
         <LeftPanel />
 
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
 
         <RightPanel />

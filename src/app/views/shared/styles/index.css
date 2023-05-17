@@ -10,9 +10,9 @@ html, body, #root {
   height: 100%;
 }
 
-#root {
+:root {
   --primary: #FF4400;
-  --box: #FFFFFF;
+  --branco: #FFFFFF;
   --background: #F7F7F7;
   --background-text: #999999;
   --text: #848FAC;

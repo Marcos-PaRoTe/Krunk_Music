@@ -1,3 +1,5 @@
+@import '../styles/index.css';
+
 .loaderContainer {
   width: 100%;
   height: calc(100vh - 400px);
