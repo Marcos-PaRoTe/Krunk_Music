@@ -1,55 +1,141 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--box);
-  padding-block: 0.5em;
-  padding-inline: 1em;
+@import '../styles/index.css';
+
+nav {
+	background: #FFF;
+	height: 80px;
+	width: 100%;
+  border-radius: 0 0 30px 30px;
 }
 
 .titulo {
-  font-weight: 600;
-  font-size: 35px ;
-  color: var(--primary);
-  text-decoration: none !important;
+	font-weight: 600;
+	font-size: 2em;
+	margin-right: 1em;
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+	display: inline-block;
+	color: var(--primary);
+}
+.titulo b {
+	color: #000;
 }
 
-.navbar a {
+.logo {
+	color: #1d075f;
+	font-size: 35px;
+	line-height: 80px;
+	font-weight: bold;
+  height: 75px;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+  margin-block: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a {
+	color: #1d075f;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
   text-decoration: none;
 }
 
-.navbar img {
-  height: 60px;
+a:hover {
+  color: #FFF;
+	background: #1d075f;
+	transition: .5s;
 }
 
-.inputBusca {
-  width: 400px !important;
+.checkbtn {
+	font-size: 30px;
+	color: #1d075f;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+[aria-current="page"] {
+	background: #1d075f;
+	color: #FFF;
+}
+
+.disabled {
+  color: var(--background-text);
+	pointer-events: none;
+}
+.disabled:hover {
+	pointer-events: none;
+}
+
+.lista i {
+	margin-right: 0.5em;
 }
 
 .lista {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+	font-weight: 600;
 }
 
-.lista li {
-  margin-right: 1em;
-}
+@media (max-width: 956px){
+	.checkbtn {
+		display: block;
+	}
+	.lista{
+    position: absolute;
+		width: 100%;
+		height: 100vh;
+		background: #FFF;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+    z-index: 999;
+    margin-right: 0 !important;
+    padding: 0;
+	}
+	nav .lista li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav .lista li a {
+		font-size: 20px;
+	}
 
-.lista li a {
-  color: var(--names);
-  text-decoration: none;
-}
+  .logo{
+		font-size: 30px;
+		padding: 0 0 0 10px;
+	}
 
-.lista li a:hover {
-  color: var(--primary);
-}
+	a:hover {
+		background: #1d075f;
+		color: #FFF;
+	}
+	#check:checked ~ .lista {
+		left: 0;
+	}
+} 
 
-.lista li i, .lista li img {
-  margin-right: 10px;
-}
+@media (max-width: 490px) {
+	img {
+		display: none;
+	}
 
-.lista li i {
-  font-size: 1.5em;
+	.titulo {
+		margin: 0.5em 0 0 1em;
+	}
 }

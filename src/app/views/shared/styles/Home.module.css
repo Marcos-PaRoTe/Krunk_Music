@@ -1,8 +1,136 @@
+@import '../styles/index.css';
+
 .home_container {
   width: 100%;
-  padding: 40px 20px 20px;
-  max-height: 100%;
+  max-height: 100vh;
   overflow-y: auto;
   text-align: center;
-  border: 1px solid slateblue;
+  padding: 10px 0;
+}
+.home_container::-webkit-scrollbar {
+  width: 5px; 
+}
+.home_container::-webkit-scrollbar-thumb {
+  padding-top: 10px !important;
+  background-color: var(--bar);
+  border-radius: 20px;
+}
+
+.box {
+  background-color: var(--branco);
+  border-radius: 10px;
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+  overflow-y: auto;
+}
+
+.start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nome i {
+  color: blue;
+}
+
+.start img {
+  margin-right: 1em;
+}
+
+.texto_container {
+  margin-top: 1em;
+}
+
+.texto {
+  text-align: justify;
+}
+
+.bold {
+  color: crimson;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.bold:hover {
+  color: darkkhaki;
+}
+
+.usuario {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.usuario div {
+  display: flex;
+  gap: 0.5em;
+}
+
+.usuario div:nth-child(2) span {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.btn_usuario {
+  border-radius: 10px;
+  padding: 0.2em 0.5em;
+  background-color: #404F60;
+  color: #fff;
+  cursor: pointer;
+}
+.btn_usuario i {
+  padding-left: 5px;
+}
+
+.btn_usuario {
+  background-color: #404F60;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+
+.btn_usuario mat-icon{
+  margin: 0 !important;
+}
+
+.btn_usuario:hover {
+  overflow: hidden;
+  animation: change-scale .8s;
+}
+
+.btn_usuario:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 120%;
+  background: #fff;
+  animation: change-color .8s ease-out forwards;
+}
+
+.btn_usuario mat-icon {
+  margin-right: 0;
+  font-size: 20px;
+  width: fit-content;
+  top: -2px;
+}
+
+@keyframes change-color {
+  0% {
+    transform: translateX(-200%) skewX(0deg);
+  }
+  100% {
+    transform: translateX(200%) skewY(-240deg);
+  }
+}
+
+@keyframes change-scale {
+  0% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
 }

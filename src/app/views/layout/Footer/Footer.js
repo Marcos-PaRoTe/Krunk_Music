@@ -1,5 +1,5 @@
-import styles from '../../shared/styles/Footer.module.css';
-import '@fortawesome/fontawesome-free/css/all.css';
+import styles from "../../shared/styles/Footer.module.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function Footer() {
   return (
@@ -7,14 +7,14 @@ function Footer() {
       <ul className={styles.lista}>
         <li>
           <i className="fa-brands fa-instagram fa-2x"></i>
-            <p>Instagram</p>
-          </li>
+          <p>Instagram</p>
+        </li>
         <li>
           <i className="fa-brands fa-facebook fa-2x"></i>
           <p>Facebook</p>
         </li>
         <li>
-          <i className='fa-brands fa-whatsapp fa-2x'></i>
+          <i className="fa-brands fa-whatsapp fa-2x"></i>
           <p>WhatsApp</p>
         </li>
       </ul>
