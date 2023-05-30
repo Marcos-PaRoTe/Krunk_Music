@@ -1,7 +1,5 @@
 import styles from "../../styles/LeftPanel.module.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import styles from "../../styles/LeftPanel.module.css";
-import "@fortawesome/fontawesome-free/css/all.css";
 
 function LeftPanel() {
   return (

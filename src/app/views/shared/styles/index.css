@@ -11,8 +11,6 @@ body,
   background-color: #f7f7f7;
   height: 100%;
 }
-
-:root {
 :root {
   --primary: #FF4400;
   --branco: #FFFFFF;
