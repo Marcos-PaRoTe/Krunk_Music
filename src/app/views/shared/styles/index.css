@@ -2,21 +2,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-html, body, #root {
-  background-color: #F7F7F7;
+html,
+body,
+#root {
+  background-color: #f7f7f7;
   height: 100%;
 }
 
 :root {
+:root {
   --primary: #FF4400;
+  --branco: #FFFFFF;
   --branco: #FFFFFF;
   --background: #F7F7F7;
   --background-text: #999999;
-  --text: #848FAC;
-  --text-feed: #424F7B;
+  --text: #848fac;
+  --text-feed: #424f7b;
   --names: #192252;
   --bar: #ff4400a3;
 }

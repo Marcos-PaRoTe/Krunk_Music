@@ -78,7 +78,13 @@ function Login() {
         </div>
       </div>
 
-    </div>
+              <a className={styles.password} href="/login">Esqueci a senha</a>
+              <button className={`${styles.btn} ${styles.btn_second}`}>Logar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
