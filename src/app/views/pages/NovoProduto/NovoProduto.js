@@ -6,6 +6,7 @@ import * as yup from "yup";
 /* import { useNavigate } from "react-router-dom"; */
 import Select from 'react-select';
 
+
 const options = [
   { id: '1', value: 'guitarra', label: 'Guitarra' },
   { id: '2', value: 'violao', label: 'Violão' },
@@ -19,19 +20,22 @@ const validationPost = yup.object().shape({
     .required("O nome é obrigatório")
     .max(20, "O nome precisa ter no máximo 20 caracteres"),
   categoria: yup
-    .string()
-    .required("A categoria é obrigatória"),
+    .array()
+    .required("A categoria é obrigatória")
+    /* .default('Bateria') */,
   preco: yup
     .string()
     .required("O preço é obrigatório")
     .max(10, "O preço precisa ter no máximo 10 números"),
 });
 
+
 function NovoProduto() {
+  
   /* let history = useNavigate(); */
-
+  
   const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(validationPost) });
-
+  
   const addPost = (data) => console.log(data);
   /* axios
     .post("https://upload-my-api.herokuapp.com/post/create", data)
@@ -62,7 +66,15 @@ function NovoProduto() {
               <Select className={styles.select}
                 options={options}
                 name="categoria"
-                register={{ ...register("categoria") }}
+                /* defaultValue={{ id: '1', value: 'guitarra', label: 'Guitarra' }} */
+                /* onChange={e => {
+                  this.setState({
+                    id: e.id,
+                    valeu: e.value,
+                    label: e.label
+                  })
+                }} */
+                register={{...register("categoria")}}
                 placeholder='Selecione a categoria'
                 styles={{
                   control: (base) => ({

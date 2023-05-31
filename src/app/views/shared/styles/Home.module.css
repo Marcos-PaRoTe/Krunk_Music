@@ -39,6 +39,8 @@
 
 .start img {
   margin-right: 1em;
+  height: 40px;
+  border-radius: 10px;
 }
 
 .texto_container {

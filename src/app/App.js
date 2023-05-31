@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Home from "./views/pages/Home/Home";
 import Navbar from "./views/layout/Navbar/Navbar";
+import Home from "./views/pages/Home/Home";
 import LeftPanel from "./views/shared/components/LeftPanel/LeftPanel";
 import Marketplace from "./views/pages/Marketplace/Marketplace";
 import RightPanel from "./views/shared/components/RightPanel/RightPanel";
@@ -19,16 +19,17 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/marketplace" element={<Marketplace />} />
-          <Route path="/home" element={<Navigate to="/" />}/>
-          <Route path="/produtos" element={<NovoProduto/>}/>
+          <Route path="/home" element={<Navigate to="/" />} />
+          <Route path="/produtos" element={<NovoProduto />} />
         </Routes>
 
         <RightPanel />
       </section>
 
       <Footer />
+      
       {/* <Routes>
-        <Route path="/" element={<Navigate to="/login" />}/>
+        <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
       </Routes> */}
     </Router>
@@ -36,3 +37,4 @@ function App() {
 }
 
 export default App;
+
