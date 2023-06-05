@@ -73,6 +73,7 @@
 .texto_musica span {
   font-size: 1.2em;
   text-align: start;
+  cursor: pointer;
 }
 
 .box p {

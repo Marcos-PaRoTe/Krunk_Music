@@ -16,7 +16,7 @@ function Home() {
             </span>
           </div>
           <span>
-            3 minutos atrás <i className="fa-solid fa-ellipsis"></i>
+            23 minutos atrás <i className="fa-solid fa-ellipsis"></i>
           </span>
         </div>
         <div className={styles.texto_container}>
@@ -47,12 +47,12 @@ function Home() {
             </span>
           </div>
           <span>
-            3 minutos atrás <i className="fa-solid fa-ellipsis"></i>
+            33 minutos atrás <i className="fa-solid fa-ellipsis"></i>
           </span>
         </div>
         <div className={styles.texto_container}>
           <p className={styles.texto}>
-            Esta é a minha mais recente música, escrevi ela me inspirando em uma viagem que fiz para floresta amazônica qunado conheci a cultura do povo Kopiku. Espero que gostem da prévia e ajudem com um valor simbólico... Qualquer feedback para avaliar... <b className={styles.bold}>Ver mais</b>
+          A banda irlandesa U2 é conhecida por suas letras profundas e melodias envolventes. "With or Without You" é uma das músicas mais emblemáticas do grupo. Escrita por Bono, a música aborda temas como amor, devoção e as complexidades de um relacionamento... <b className={styles.bold}>Ver mais</b>
           </p>
           <hr></hr>
         </div>
@@ -74,16 +74,16 @@ function Home() {
           <div>
             <img src={avatar3} alt='krunk_Logo'/>
             <span className={styles.nome}>
-              Monka Di Luffa <i className="fa-solid fa-certificate"></i>
+              Ademilton Soza <i className="fa-solid fa-certificate"></i>
             </span>
           </div>
           <span>
-            3 minutos atrás <i className="fa-solid fa-ellipsis"></i>
+            43 minutos atrás <i className="fa-solid fa-ellipsis"></i>
           </span>
         </div>
         <div className={styles.texto_container}>
           <p className={styles.texto}>
-            Esta é a minha mais recente música, escrevi ela me inspirando em uma viagem que fiz para floresta amazônica qunado conheci a cultura do povo Kopiku. Espero que gostem da prévia e ajudem com um valor simbólico... Qualquer feedback para avaliar... <b className={styles.bold}>Ver mais</b>
+            A lendária banda britânica Queen revolucionou o cenário musical com sua mistura única de rock e teatralidade. "Bohemian Rhapsody" é um exemplo perfeito dessa abordagem ousada. Composta por Freddie Mercury, a música é uma verdadeira obra-prima, com suas diferentes seções... <b className={styles.bold}>Ver mais</b>
           </p>
           <hr></hr>
         </div>
@@ -105,16 +105,16 @@ function Home() {
           <div>
             <img src={avatar4} alt='krunk_Logo'/>
             <span className={styles.nome}>
-              Monka Di Luffa <i className="fa-solid fa-certificate"></i>
+              Luidemberg Broca <i className="fa-solid fa-certificate"></i>
             </span>
           </div>
           <span>
-            3 minutos atrás <i className="fa-solid fa-ellipsis"></i>
+          53 minutos atrás <i className="fa-solid fa-ellipsis"></i>
           </span>
         </div>
         <div className={styles.texto_container}>
           <p className={styles.texto}>
-            Esta é a minha mais recente música, escrevi ela me inspirando em uma viagem que fiz para floresta amazônica qunado conheci a cultura do povo Kopiku. Espero que gostem da prévia e ajudem com um valor simbólico... Qualquer feedback para avaliar... <b className={styles.bold}>Ver mais</b>
+            A banda britânica Coldplay ganhou destaque mundial com sua música envolvente e letras emocionantes. Uma das suas canções mais icônicas é "Viva La Vida". Composta por Chris Martin, a música é um hino otimista que fala sobre superar desafios e abraçar novas oportunidades... <b className={styles.bold}>Ver mais</b>
           </p>
           <hr></hr>
         </div>

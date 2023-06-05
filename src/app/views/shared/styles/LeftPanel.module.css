@@ -112,6 +112,11 @@
   background-color: var(--background);
 }
 
+.grupos_amigos img {
+  height: 40px;
+  border-radius: 10px;
+}
+
 .grupos_nomes div:nth-child(1):hover {
   color: navy;
 }

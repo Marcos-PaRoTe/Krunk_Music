@@ -1,5 +1,9 @@
 import styles from '../../styles/RightPanel.module.css';
 import logo from "../../../../../assets/profile.png";
+import avatar2 from "../../../../../assets/avatar2.png";
+import avatar3 from "../../../../../assets/avatar3.jpg";
+import avatar4 from "../../../../../assets/avatar4.png";
+import avatar5 from "../../../../../assets/avatar5.jpg";
 
 function RightPanel() {
   return (
@@ -31,20 +35,20 @@ function RightPanel() {
         </div>
         <div className={styles.grupos_nomes}>
           <div>
-            <img src={logo} alt='krunk_Logo' />
-            <span><b>Alarakiba</b> e <b>outros 78</b> curtiram o seu post ৹ 5m</span>
+            <img src={avatar5} alt='krunk_Logo' />
+            <span><b>Vean</b> e <b>outros 78</b> curtiram o seu post ৹ 5m</span>
             <hr></hr>
           </div>
           <div>
             <div>
-              <img src={logo} alt='krunk_Logo' />
+              <img src={avatar5} alt='krunk_Logo' />
               <span><b>Rarri</b> marcou você no comentário: <b>@kletinho</b> Olha isso aqui ৹ 15m</span>
             </div>
             <hr></hr>
           </div>
           <div>
             <div>
-              <img src={logo} alt='krunk_Logo' />
+              <img src={avatar2} alt='krunk_Logo' />
               <span><b>Jana</b> começou a te seguir.<b> Entre</b> no perfil dela ৹ 35m</span>
             </div>
             <hr></hr>
@@ -52,20 +56,20 @@ function RightPanel() {
         </div>
         <div className={styles.grupos_nomes}>
           <div>
-            <img src={logo} alt='krunk_Logo' />
+            <img src={avatar3} alt='krunk_Logo' />
             <span><b>Zimba</b> e <b>outros 68</b> curtiram o seu post ৹ 60m</span>
             <hr></hr>
           </div>
           <div>
             <div>
-              <img src={logo} alt='krunk_Logo' />
+              <img src={avatar4} alt='krunk_Logo' />
               <span><b>Barbeiro</b> marcou você no comentário: <b>@kletinho</b> Se liga aqui ৹ 12m</span>
             </div>
             <hr></hr>
           </div>
           <div>
             <div>
-              <img src={logo} alt='krunk_Logo' />
+              <img src={avatar5} alt='krunk_Logo' />
               <span><b>Emanuel</b> começou a te seguir.<b> Entre</b> no perfil dele ৹ 55m</span>
             </div>
             <hr></hr>

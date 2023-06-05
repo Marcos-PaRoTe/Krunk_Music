@@ -1,19 +1,20 @@
 @import '../styles/index.css';
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body{
+body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	background-color: #0c192c;
 }
 
-.main_container{
+.main_container {
 	width: 410px;
 	height: 480px;
 	display: flex;
@@ -24,34 +25,36 @@ body{
 	z-index: 10;
 	overflow: hidden;
 	background: #fff;
-	padding: 30px;
-	box-shadow: 0 0 8px rgba(0,0,0, 0.3);
+	padding: 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 	border-radius: 2px;
 }
 
-.container{
+.container {
 	width: 820px;
 	height: 100%;
 	position: absolute;
-	left:0;
+	left: 0;
 	z-index: -1;
 	display: flex;
 	flex-direction: row;
 	transition: all 0.5s ease;
 }
 
-.login_container, .cadastro_container{
+.login_container,
+.cadastro_container {
 	width: 410px;
-	padding: 30px;
+	padding: 20px;
 	height: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
-#slide:checked ~ .container{
+#slide:checked~.container {
 	left: -410px !important;
 	position: absolute;
 }
 
-.container .texto{
+.container .texto {
 	font-size: 35px;
 	font-weight: 600;
 	text-align: center;
@@ -64,17 +67,17 @@ body{
 	flex-direction: column;
 }
 
-.container form .campos{
+.container form .campos {
 	height: 45px;
 	width: 100%;
 	margin: 20px 0;
 }
 
-form .campos label{
+form .campos label {
 	font-size: 18px;
 }
 
-form .campos input{
+form .campos input {
 	height: 100%;
 	width: 100%;
 	padding-left: 10px;
@@ -84,39 +87,41 @@ form .campos input{
 	border-radius: 2px;
 }
 
- .campos input:focus{
+.campos input:focus {
 	border-color: #4285F4;
 	border-bottom-width: 2.5px;
 }
 
-form .esqueceu{
-	margin-top: 30px;
+form .esqueceu {
+	margin-top: 40px;
 	display: flex;
 	justify-content: center;
 	align-self: start;
+	pointer-events: none;
 }
 
-form .esqueceu a{
-	color: #4285F4;
+form .esqueceu a {
+	color: #c1c1c1;
 }
 
-form .esqueceu a:hover{
+form .esqueceu a:hover {
 	text-decoration: underline;
 }
 
-form .btn_login{
-	margin: 52px 0 20px 0;
+form .btn_login {
+	margin: 50px 0 20px 0;
 	height: 45px;
 	width: 100%;
 }
 
-form .btn_cadastro{
+form .btn_cadastro {
 	margin: 20px 0;
 	height: 45px;
 	width: 100%;
 }
 
-form .btn_login button, form .btn_cadastro button{
+form .btn_login button,
+form .btn_cadastro button {
 	height: 100%;
 	width: 100%;
 	background: #4285F4;
@@ -129,100 +134,144 @@ form .btn_login button, form .btn_cadastro button{
 	border-radius: 2px;
 }
 
-.btn_login button:hover,.btn_cadastro button:hover{
+.btn_login button:hover,
+.btn_cadastro button:hover {
 	background: #fff;
 	border: 2px solid #4285F4;
 	color: #4285F4;
 }
 
-form .cadastro_link{
+form .cadastro_link {
 	text-align: center;
 }
 
-form .cadastro_link a{
+form .cadastro_link a {
 	color: #4285F4;
 	text-decoration: none;
 }
 
-form .cadastro_link .slide{
+form .cadastro_link .slide {
 	cursor: pointer;
-  text-decoration: underline;
-  color: #4285F4;
+	text-decoration: underline;
+	color: #4285F4;
 }
 
-form .cadastro_link a:hover{
-  text-decoration: underline;
-  color: #4286f48e;
+form .cadastro_link a:hover {
+	text-decoration: underline;
+	color: #4286f48e;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
 	display: none;
 }
 
+/* Estilizar a aparência do campo de entrada */
+input[type="date"] {
+	padding: 5px;
+}
+
+.errorLogin {
+	margin-top: 0.5em;
+	color: red;
+}
+
 @media (max-width: 440px) {
-  .main_container {
-    width: 335px !important;
-  }
+	.main_container {
+		width: 335px !important;
+	}
 
-  .login_container {
-    width: 333px !important;
-  }
+	.login_container {
+		width: 333px !important;
+	}
 
-  .cadastro_container {
-    width: 333px !important;
-  }
+	.cadastro_container {
+		width: 333px !important;
+	}
 
-  #slide:checked ~ .container{
-    left: -333px !important;
-    position: absolute;
-  }
+	#slide:checked~.container {
+		left: -333px !important;
+		position: absolute;
+	}
 }
 
 @media (max-width: 350px) {
-  .main_container {
-    width: 300px !important;
-  }
+	.main_container {
+		width: 300px !important;
+	}
 
-  .login_container {
-    width: 300px !important;
-  }
+	.login_container {
+		width: 300px !important;
+	}
 
-  .cadastro_container {
-    width: 300px !important;
-  }
+	.cadastro_container {
+		width: 300px !important;
+	}
 
-  #slide:checked ~ .container{
-    left: -300px !important;
-    position: absolute;
-  }
+	#slide:checked~.container {
+		left: -300px !important;
+		position: absolute;
+	}
 }
 
 button {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: transform;
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	transition-duration: 0.3s;
+	transition-property: transform;
 }
+
 button:before {
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  transition-duration: 0.3s;
-  transition-property: transform, opacity;
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 0;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+	transition-duration: 0.3s;
+	transition-property: transform, opacity;
 }
-button:hover, button:focus, button:active {
-  transform: translateY(-5px);
+
+button:hover,
+button:focus,
+button:active {
+	transform: translateY(-5px);
 }
-button:hover:before, button:focus:before, button:active:before {
-  opacity: 1;
-  transform: translateY(5px);
+
+button:hover:before,
+button:focus:before,
+button:active:before {
+	opacity: 1;
+	transform: translateY(5px);
+}
+
+/* Animação */
+.animation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+	background-size: 300% 300%;
+	animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
 }

@@ -64,7 +64,7 @@ label {
   font-family: Poppins;
 }
 
-input, .select {
+input {
   width: 100%;
   border-radius: 4px;
   height: 50px;
@@ -72,13 +72,60 @@ input, .select {
   outline: 0;
   font-size: 1.2rem;
   text-align: center;
-}
-
-input:nth-child(even) {  
   border: 1px solid #0000006a;
-  height: 62px;
+  height: 60px;
 }
 
+.error_message {
+  color: rgb(240, 47, 47);
+}
+
+.fields .select ~ .error_message {
+  margin-top: 1em;
+}
+
+/* Estilos gerais do select */
+select {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  border: 1px solid #0000006a;
+}
+
+/* Estilos para a seta do select */
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+/* Estilos ao passar o mouse sobre o select */
+select:hover {
+  border-color: #999;
+}
+
+/* Estilos ao focar no select */
+select:focus {
+  border-color: #aaa;
+  outline: none;
+}
+
+/* Estilos para a opção selecionada */
+select option:checked {
+  background-color: #e0e0e0;
+}
+
+/* Botão Post*/
 .btn_post{
   margin-top: 30px;
   text-align: center;
@@ -95,11 +142,47 @@ input:nth-child(even) {
   cursor: pointer;
 
 }
-
-.error_message {
-  color: rgb(240, 47, 47);
+@keyframes animacaoBuzz {
+  10% {
+    transform: translateX(8px) rotate(3deg);
+  }
+  20% {
+    transform: translateX(-8px) rotate(-3deg);
+  }
+  30% {
+    transform: translateX(8px) rotate(3deg);
+  }
+  40% {
+    transform: translateX(-8px) rotate(-3deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(2deg);
+  }
+  60% {
+    transform: translateX(-5px) rotate(-2deg);
+  }
+  70% {
+    transform: translateX(5px) rotate(2deg);
+  }
+  80% {
+    transform: translateX(-5px) rotate(-2deg);
+  }
+  90% {
+    transform: translateX(2px) rotate(0);
+  }
+  100% {
+    transform: translateX(-2px) rotate(0);
+  }
 }
-
-.fields .select ~ .error_message {
-  margin-top: 1em;
+.btn_post {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.btn_post:hover, .btn_post:focus, .btn_post:active {
+  animation-name: animacaoBuzz;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
