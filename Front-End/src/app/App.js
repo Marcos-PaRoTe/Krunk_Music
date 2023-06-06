@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 
 import Navbar from "./views/layout/Navbar/Navbar";
 import Home from "./views/pages/Home/Home";
@@ -8,7 +8,6 @@ import RightPanel from "./views/shared/components/RightPanel/RightPanel";
 import Footer from "../app/views/layout/Footer/Footer";
 import NovoProduto from "./views/pages/NovoProduto/NovoProduto";
 
-
 /* import Login from "./views/pages/Login/Login"; */
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
     <Router>
       <Navbar />
 
-      <section style={{ display: 'flex', width: '100%' }}>
+      <section style={{ display: "flex", width: "100%" }}>
         <LeftPanel />
 
         <Routes>
@@ -30,10 +29,11 @@ function App() {
       </section>
 
       <Footer />
-
     </Router>
 
-    /* <Router>
+    
+
+   /*  <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Navigate to="/login" />} />
@@ -44,3 +44,16 @@ function App() {
 
 export default App;
 
+/*  
+    <Router>
+      <section style={{ display: 'flex', width: '100%' }}>
+        <Routes>
+          <Route exact path="/" element={<Home to="home" />} />
+          <Route path="/login" element={<Login/>} />
+          <Route exact path="/home" element={<Home />} />
+          <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/produtos" element={<NovoProduto />} />
+        </Routes>
+      </section>
+    </Router> 
+*/

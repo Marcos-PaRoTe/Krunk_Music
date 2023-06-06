@@ -20,7 +20,7 @@ function Navbar() {
           <NavLink to='/marketplace'>Marketplace</NavLink>
         </li>
         <li><NavLink to='/produtos'><i className="fa-solid fa-plus fa-flip" style={{color: '#FF4400'}}></i>Produtos</NavLink></li>
-        <li><NavLink to='/contato' className={styles.disabled} onClick={ (e) => e.preventDefault()}>Contato</NavLink></li>
+        <li><NavLink to='/login'>Sair</NavLink></li>
       </ul>
     </nav>
   );

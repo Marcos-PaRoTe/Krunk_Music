@@ -32,7 +32,7 @@ function Home() {
             <button className={styles.btn_usuario}>Compartilhar<i className="fa-solid fa-share fa-beat-fade" style={{color: '#FFF'}}></i></button>
           </div>
           <div>
-            <span><i className="fa-sharp fa-solid fa-heart fa-beat" style={{color: '#ff0000'}}></i> 70</span>
+            <span><i className="fa-sharp fa-solid fa-heart fa-beat" style={{color: '#ff0000'}}></i> 61</span>
             <span><i className="fa-solid fa-comment fa-fade" style={{color: '#ee00ff'}}></i>34</span>
             <span><i className="fa-solid fa-cart-shopping fa-bounce" style={{color: '#005eff'}}></i> 16</span>
           </div>
@@ -63,9 +63,9 @@ function Home() {
             <button className={styles.btn_usuario}>Compartilhar<i className="fa-solid fa-share fa-beat-fade" style={{color: '#FFF'}}></i></button>
           </div>
           <div>
-            <span><i className="fa-sharp fa-solid fa-heart fa-beat" style={{color: '#ff0000'}}></i> 70</span>
+            <span><i className="fa-sharp fa-solid fa-heart fa-beat" style={{color: '#ff0000'}}></i> 50</span>
             <span><i className="fa-solid fa-comment fa-fade" style={{color: '#ee00ff'}}></i>34</span>
-            <span><i className="fa-solid fa-cart-shopping fa-bounce" style={{color: '#005eff'}}></i> 16</span>
+            <span><i className="fa-solid fa-cart-shopping fa-bounce" style={{color: '#005eff'}}></i> 100</span>
           </div>
         </div>
       </div>
@@ -94,9 +94,9 @@ function Home() {
             <button className={styles.btn_usuario}>Compartilhar<i className="fa-solid fa-share fa-beat-fade" style={{color: '#FFF'}}></i></button>
           </div>
           <div>
-            <span><i className="fa-sharp fa-solid fa-heart fa-beat" style={{color: '#ff0000'}}></i> 70</span>
+            <span><i className="fa-sharp fa-solid fa-heart fa-beat" style={{color: '#ff0000'}}></i> 39</span>
             <span><i className="fa-solid fa-comment fa-fade" style={{color: '#ee00ff'}}></i>34</span>
-            <span><i className="fa-solid fa-cart-shopping fa-bounce" style={{color: '#005eff'}}></i> 16</span>
+            <span><i className="fa-solid fa-cart-shopping fa-bounce" style={{color: '#005eff'}}></i> 19</span>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ function Home() {
           <div>
             <span><i className="fa-sharp fa-solid fa-heart fa-beat" style={{color: '#ff0000'}}></i> 70</span>
             <span><i className="fa-solid fa-comment fa-fade" style={{color: '#ee00ff'}}></i>34</span>
-            <span><i className="fa-solid fa-cart-shopping fa-bounce" style={{color: '#005eff'}}></i> 16</span>
+            <span><i className="fa-solid fa-cart-shopping fa-bounce" style={{color: '#005eff'}}></i> 10</span>
           </div>
         </div>
       </div>

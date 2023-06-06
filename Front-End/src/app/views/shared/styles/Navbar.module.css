@@ -4,7 +4,6 @@ nav {
 	background: #FFF;
 	height: 80px;
 	width: 100%;
-  border-radius: 0 0 30px 30px;
 }
 
 .titulo {
@@ -72,14 +71,6 @@ a:hover {
 [aria-current="page"] {
 	background: #1d075f;
 	color: #FFF;
-}
-
-.disabled {
-  color: var(--background-text);
-	pointer-events: none;
-}
-.disabled:hover {
-	pointer-events: none;
 }
 
 .lista i {

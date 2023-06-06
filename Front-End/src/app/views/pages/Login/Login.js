@@ -1,21 +1,72 @@
 import styles from '../../shared/styles/Login.module.css';
+import { useNavigate } from 'react-router-dom';
+import api from "../../../core/services/api"
 
 function Login() {
 
+  const navigate = useNavigate();
+
   const logar = (e) => {
     e.preventDefault();
-    console.log(e.target[0].value);
-    console.log(e.target[1].value);
+    let email = e.target[0].value
+    let senha = e.target[1].value
+
+    const loginForm = {
+      email: email,
+      senha: senha
+    };
+
+    fazerLogin(loginForm);
   }
 
   const cadastrar = (e) => {
     e.preventDefault();
-    let data = e.target[1].value;
+    let data = e.target[2].value;
     let dataAlterarda = new Date(data).toLocaleDateString();
-    console.log(e.target[0].value);
-    console.log(e.target[2].value);
-    console.log(dataAlterarda);
+    let nome = e.target[0].value
+    let email = e.target[1].value
+    let senha = e.target[3].value
+
+    const registerForm = {
+      nome: nome,
+      email: email,
+      senha: senha,
+      dataNascimento: dataAlterarda
+    };
+    fazerRegistro(registerForm);
   }
+
+  async function fazerRegistro(registerForm){
+    await api.post('/cadastrar' , registerForm)
+    .then((response) => {
+      navigate('/home');
+      setTimeout(() => {
+        alert(`Bem vinde ${response.data.nome}`);
+      }, 100);
+    })
+    .catch((error) => {
+     if(error.response.status === 409){
+      alert("Usuário já existe")
+     }else{
+      alert("Ocorreu um erro, tente novamente")
+     }
+    });
+  }
+
+  async function fazerLogin(loginForm) {
+    await api
+      .post('/login', loginForm)
+      .then((response) => {
+        navigate('/home');
+        setTimeout(() => {
+          alert(`Bem vinde ${response.data.nome}`);
+        }, 100);
+      })
+      .catch(() => {
+        alert("Email ou senha inválidos!");
+      });
+  }
+
 
   return (
     <section className={styles.animation}>
