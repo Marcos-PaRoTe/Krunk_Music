@@ -8,6 +8,8 @@ Krunk Music é uma rede social feita para você gerenciar suas músicas preferid
 
 >**Projeto criado para Universidade São Judas - Trabalho A3**
 
+>**Link do projeto - Youtube** > **https://youtu.be/Pk-DZhFaR5E**
+
 ## Participantes
 
 - Alexandre dos Santos Ribeiro - RA: 82114637
