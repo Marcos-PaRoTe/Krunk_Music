@@ -142,3 +142,9 @@
 .grupos_amigos div:nth-child(4):hover {
   color: lawngreen;
 }
+
+@media (max-width: 632px) {
+  .left_container {
+    display: none;
+  }
+}

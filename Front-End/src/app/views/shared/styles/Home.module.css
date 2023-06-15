@@ -65,6 +65,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1em;
+}
+
+@media (max-width: 815px) {
+  .usuario {
+    justify-content: center;
+  }
 }
 
 .usuario div {
@@ -121,6 +128,10 @@
   top: -2px;
 }
 
+.norap {
+  white-space: nowrap;
+}
+
 @keyframes change-color {
   0% {
     transform: translateX(-200%) skewX(0deg);
@@ -136,5 +147,14 @@
   }
   100% {
     scale: 1;
+  }
+}
+
+@media (max-width: 836px) {
+  .home_container::-webkit-scrollbar {
+    display: none;
+  }
+  .home_container::-webkit-scrollbar-thumb {
+    display: none;
   }
 }

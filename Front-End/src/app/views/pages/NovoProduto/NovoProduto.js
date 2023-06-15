@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import styles from "../../shared/styles/NovoProduto.module.css";
 import api from "../../../core/services/api"
 import { useNavigate } from "react-router-dom";
+import Footer from "../../layout/Footer/Footer";
+import RightPanel from "../../shared/components/RightPanel/RightPanel";
+import LeftPanel from "../../shared/components/LeftPanel/LeftPanel";
+import Navbar from "../../layout/Navbar/Navbar";
 
 function NovoProduto() {
 
@@ -61,59 +65,67 @@ function NovoProduto() {
     registrarProduto(produtoForm);
   }
 
-  async function registrarProduto(produtoForm){
-    await api.post('/produtos' , produtoForm)
-    .then((response) => {
-      navigate('/marketplace');
-    });;
+  async function registrarProduto(produtoForm) {
+    await api.post('/produtos', produtoForm)
+      .then((response) => {
+        navigate('/marketplace');
+      });;
   }
 
   return (
-    <section className={styles.home_container}>
-      <div className={styles.box}>
-        <h1>Criar Anúncio</h1>
-        <hr></hr>
+    <>
+      <Navbar />
+      <div style={{ display: 'flex', width: '100%' }}>
+        <LeftPanel />
+        <section className={styles.home_container}>
+          <div className={styles.box}>
+            <h1>Criar Anúncio</h1>
+            <hr></hr>
 
-        <div className={styles.card_body_post}>
-          <form onSubmit={handleSubmit}>
-            <div className={styles.fields}>
-              <label>Nome Do Anunciante</label>
-              <input type="text" name="nome" placeholder="Digite o nome do produto" onChange={handleChangeInput0} />
-              {erro0 && <p className={styles.error_message}>{erro0}</p>}
-            </div>
+            <div className={styles.card_body_post}>
+              <form onSubmit={handleSubmit}>
+                <div className={styles.fields}>
+                  <label>Nome Do Anunciante</label>
+                  <input type="text" name="nome" placeholder="Digite o nome do produto" onChange={handleChangeInput0} />
+                  {erro0 && <p className={styles.error_message}>{erro0}</p>}
+                </div>
 
-            <div className={styles.fields}>
-              <label>Nome Do Produto</label>
-              <input type="text" name="nome" placeholder="Digite o nome do produto" onChange={handleChangeInput1} />
-              {erro1 && <p className={styles.error_message}>{erro1}</p>}
-            </div>
+                <div className={styles.fields}>
+                  <label>Nome Do Produto</label>
+                  <input type="text" name="nome" placeholder="Digite o nome do produto" onChange={handleChangeInput1} />
+                  {erro1 && <p className={styles.error_message}>{erro1}</p>}
+                </div>
 
-            <div className={styles.fields}>
-              <label>Categoria</label>
-              <select id="selectOption" value={opcaoSelecionada} onChange={handleChangeSelect}>
-                <option value="">Selecione</option>
-                <option value="guitarra">Guitarra</option>
-                <option value="violao">Violão</option>
-                <option value="bateria">Bateria</option>
-                <option value="musica">Música</option>
-                <option value="piano">Piano</option>
-              </select>
-              {erro2 && <p className={styles.error_message}>{erro2}</p>}
-            </div>
+                <div className={styles.fields}>
+                  <label>Categoria</label>
+                  <select id="selectOption" value={opcaoSelecionada} onChange={handleChangeSelect}>
+                    <option value="">Selecione</option>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="violao">Violão</option>
+                    <option value="bateria">Bateria</option>
+                    <option value="musica">Música</option>
+                    <option value="piano">Piano</option>
+                  </select>
+                  {erro2 && <p className={styles.error_message}>{erro2}</p>}
+                </div>
 
-            <div className={styles.fields}>
-              <label>Preço</label>
-              <input type="number" name="preco" placeholder="Digite o preço do produto" onChange={handleChangeInput3} />
-              {erro3 && <p className={styles.error_message}>{erro3}</p>}
-            </div>
+                <div className={styles.fields}>
+                  <label>Preço</label>
+                  <input type="number" name="preco" placeholder="Digite o preço do produto" onChange={handleChangeInput3} />
+                  {erro3 && <p className={styles.error_message}>{erro3}</p>}
+                </div>
 
-            <div className={styles.btn_post}>
-              <button type="submit">Criar</button>
+                <div className={styles.btn_post}>
+                  <button type="submit">Criar</button>
+                </div>
+              </form>
             </div>
-          </form>
-        </div>
+          </div>
+        </section>
+        <RightPanel />
       </div>
-    </section>
+      <Footer />
+    </>
   );
 }
 

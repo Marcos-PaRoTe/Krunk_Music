@@ -41,7 +41,7 @@ function Login() {
     .then((response) => {
       navigate('/home');
       setTimeout(() => {
-        alert(`Bem vinde ${response.data.nome}`);
+        alert(`Bem vindo(a) ${response.data.nome}`);
       }, 100);
     })
     .catch((error) => {
@@ -59,7 +59,7 @@ function Login() {
       .then((response) => {
         navigate('/home');
         setTimeout(() => {
-          alert(`Bem vinde ${response.data.nome}`);
+          alert(`Bem vindo(a) ${response.data.nome}`);
         }, 100);
       })
       .catch(() => {
@@ -111,7 +111,12 @@ function Login() {
               </div>
 
               <div className={styles.cadastro_link}>
-                Não é membro? <a href='/'><label htmlFor={styles.slide} className={styles.slide}>Cadastre-se</label></a>
+                Não é membro? 
+                <a href='/'>
+                  <label htmlFor={styles.slide} className={styles.slide}>
+                    Cadastre-se
+                  </label>
+                </a>
               </div>
             </form>
           </div>
@@ -121,12 +126,22 @@ function Login() {
             <form onSubmit={cadastrar}>
               <div className={styles.campos}>
                 <label htmlFor="">Nome</label>
-                <input type="text" required />
+                <input 
+                  id='nome2'
+                  name='nome'
+                  type="text"
+                  placeholder='Digite o seu nome completo'
+                  required />
               </div>
 
               <div className={styles.campos}>
                 <label htmlFor="">Email</label>
-                <input type="email" required />
+                <input 
+                  id='email2'
+                  name='email'
+                  type="email"
+                  placeholder='Digite o seu email'
+                  required/>
               </div>
 
               <div className={styles.campos}>
@@ -136,7 +151,13 @@ function Login() {
 
               <div className={styles.campos}>
                 <label htmlFor="">Senha</label>
-                <input type="password" required />
+                <input
+                  id='senha2'
+                  name='senha'
+                  type="password"
+                  placeholder='Digite a sua senha'
+                  required
+                  minLength={6}/>
               </div>
 
               <div className={styles.btn_cadastro}>
