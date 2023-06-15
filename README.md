@@ -2,7 +2,7 @@
 
 Krunk Music é uma rede social feita para você gerenciar suas músicas preferidas, criar laços com seus amigos, comprar e vender partituras e muito mais...
 
-- Front-end: Framework React - Framework Bootstrap
+- Front-end: Framework React.js
 - Back-end: NODE.JS
 - Banco de dados: MySQL
 
@@ -22,16 +22,31 @@ Krunk Music é uma rede social feita para você gerenciar suas músicas preferid
 
 1. Clone este repositório em sua máquina local.
 2. Instale as dependências do projeto utilizando o comando `npm install`.
+3. Precisa instalar nas pastas, back-end e front-end.
 
-## Uso
+## Uso do Front-End
 
-1. Inicie o servidor de desenvolvimento com o comando `npm start`.
+1. Inicie o servidor de desenvolvimento com o comando `npm start`, dentro da pasta Front-End,.
 2. Acesse o aplicativo em `http://localhost:3000`.
 3. Use com sabedoria.
 
+## Uso do Back-End
+1. Baixe o MySQL e salve a o usuário e senha do servidor
+2. Verifique o arquivo 'db.json' e troque o usuário e/ou senha do seu servidor para o local indicado -> "krunk", "usuario", "senha"
+3. Após isso, salve tudo e digite no terminal, dentro da pasta Back-End, 'node app.js'
+4. Rodou? SUCESSO!! 
+   1. Erro? 
+   2. Com o MySQL rodando, crie a tabela krunk, com o comando 'create database krunk;'
+   3. Após criar essa database, use o mesmo com o comando 'use krunk;'
+   4. Agora sim, digite no terminal da sua IDE, 'node app.js'
+   5. Finalmente RODOU?? SUCESSSOOO!!!
+      1. Erro ? 
+      2. Adicione um dos colaboradores e nos chame, será um prazer ajudar!!!
+
+
 ## Funcionalidades
 
-Liste as funcionalidades do projeto.
+Neste projeto você é capaz de cadastrar-se, fazer um login, olhar o feed, visualizar produtos à venda, adicionar produtos à venda e fazer o logout.
 
 ## Contribuindo
 
